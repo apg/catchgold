@@ -1,0 +1,46 @@
+Catchgold v0.2
+copyright (c) 2003 Andrew Gwozdziewycz <gwozdzie@lucas.cis.temple.edu>
+
+Licensed under the GNU General Public License 
+        <http://www.gnu.org/licenses/gpl.txt>
+
+Catchgold requires:
+-------------------
+   ncurses
+
+To compile:
+-----------
+   make  
+
+   You will of course see error messages if the compile should fail. The most
+severe error will happen trying to link ncurses. If this fails, try linking with
+curses and changing:
+   #include <ncurses.h> to
+   #include <curses.h>
+
+And recompile with make.
+
+To run:
+-------
+   ./catchgold
+
+Game Background:
+----------------
+   The Goal of the game is to "catch" as much "gold" as you can without paying
+taxes on it. To help you do this, you are given 1 anywhere Taxi pickup and the
+possibility to pick up a giant fan which will blow away the enemies(IRS Agents).
+
+   Steal as much money as you can without being caught.
+
+Game Controls:
+--------------
+   By default:
+      't': use "teleport" (i.e. Taxi pickup)
+      'w': use "weapon" (i.e. Giant fan)
+      'h': move left
+      'k': move up
+      'j': move down
+      'l': move right
+      'q': quit
+
+   
